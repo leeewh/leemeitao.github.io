@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0"/>
+    <title>个人中歆</title>
+    <link type="image/x-icon" rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../res/mui/css/mui.css"/>
+    <link rel="stylesheet" href="../res/fa/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="../css/common.css"/>
+    <link rel="stylesheet" href="../css/user.css"/>
+</head>
+<body>
+<div class="mt_container">
+    <header class="mt_topBar">
+        <a href="javascript:history.back();" class="mt_topBar_back"><span class="fa fa-arrow-left"></span></a>
+        <h1>个人中心</h1>
+        <!--<a href="javascript:;" class="mt_topBar_search"><span class="fa fa-refresh"></span></a>-->
+    </header>
+    <div class="mt_content">
+        <div class="mt_userTop">
+            <li class="mui-table-view-cell mui-media">
+                <div class="mui-navigate-right">
+                    <div class="mt_userImg"><img src="../images/user.jpg" onerror="this.src='../images/none.png'" /></div>
+                    <div class="mt_userInfo">
+                        <p class="username mui-ellipsis-2">正在获取</p>
+                        <p>绑定手机:正在获取</p>
+                    </div>
+                </div>
+            </li>
+            <li class="mui-table-view-cell mui-media">
+                <a href="javascript:;" class="mui-navigate-right">
+                    账号与安全
+                </a>
+            </li>
+            <li class="mui-table-view-cell mui-media">
+                <a href="cart.html" class="mui-navigate-right">
+                    我的购物车
+                </a>
+            </li>
+            <li class="mui-table-view-cell mui-media">
+                <a href="javascript:;" class="mui-navigate-right">
+                    评价一下
+                </a>
+            </li>
+
+        </div>
+
+    </div>
+    <footer class="mt_footBar">
+        <ul>
+            <li><a href="../index.html"><span class="fa fa-home"></span><p>首页</p></a></li>
+            <li><a href="../category.html"><span class="fa fa-bars"></span><p>分类</p></a></li>
+            <li><a href="javascript:;"><span class="fa fa-shopping-cart"></span><p>购物车</p></a></li>
+            <li   class="now"><a href="index.html"><span class="fa fa-user"></span><p>会员中心</p></a></li>
+        </ul>
+    </footer>
+</div>
+
+<script type="text/template" id="userTem">
+    <p class="username mui-ellipsis-2"><%=username%></p>
+    <p>绑定手机：<%=mobile%></p>
+</script>
+<script src="../res/mui/js/mui.js"></script>
+<script src="../res/zepto/zepto.min.js"></script>
+<script src="../res/artTemplate/template-native.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/user/index.js"></script>
+</body>
+</html>

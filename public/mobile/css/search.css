@@ -1,0 +1,140 @@
+
+/*搜索中心模块*/
+.mui-scroll-wrapper{
+    touch-action: none;
+}
+.mt_searchBar{
+    height: 50px;
+    width: 100%;
+    padding: 10px;
+    position: relative;
+}
+.mt_searchBar input{
+    height: 30px;
+    width: 100%;
+    background: #fff;
+    border: 1px solid #006699;
+    border-radius: 5px;
+    margin: 0;
+    text-align: left;
+    padding: 0;
+    padding-left: 10px;
+    padding-right: 60px;
+    font-size: 14px;
+}
+.mt_searchBar a{
+    text-align: center;
+    display: block;
+    width: 60px;
+    height: 30px;
+    background: #006699;
+    color: #fff;
+    border: 1px solid #006699;
+    border-radius: 0 5px 5px 0;
+    line-height: 28px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.mt_history{
+    width: 100%;
+}
+.mt_history .mt_history_top{
+    padding: 0 10px;
+}
+.mt_history .mt_history_top>p{
+    float: left;
+    color: #8f8f94;
+}
+.mt_history .mt_history_top>a{
+    display: block;
+    float: right;
+    font-size: 14px;
+    color: #8f8f94;
+}
+.mt_history .mt_history_content{
+    width: 100%;
+}
+.mt_history .mt_history_content li a{
+    height: 30px;
+    color: #333;
+    font-size: 12px;
+    text-align: right;
+    padding-left: 8px;
+    line-height: 30px;
+}
+.mt_history .mt_history_content li{
+    border: 1px solid #ccc;
+    height: 30px;
+    line-height: 30px;
+}
+.mt_history .mt_history_content li span{
+    float: right;
+    font-size: 12px;
+    height: 30px;
+    line-height: 30px;
+    padding-right: 6px;
+}
+.mt_history .mt_history_content ul{
+    list-style: none;
+    margin: 0;
+    padding: 0 10px;
+    width: 100%;
+
+}
+
+
+/*商品列表模块*/
+
+.mt_order{
+    height: 30px;
+    width: 100%;
+    background: #efeff4;
+}
+.mt_order a{
+    float: left;
+    width: 25%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 12px;
+    color: #333;
+}
+.mt_order a.now{
+    color: orange;
+}
+.mt_pro_con{
+    width: 100%;
+    padding: 0 10px;
+}
+.mt_pro_goods{
+    padding: 5px 5px;
+    text-align: center;
+    float: left;
+    width: 50%;
+}
+.mt_pro_goods>img{
+    display: block;
+    width: 100%;
+}
+.mt_pro_goods p:first-of-type{
+    font-size: 14px;
+}
+.mt_pro_goods p:last-of-type span:first-of-type{
+    color: red;
+    margin-right: 5px;
+}
+.mt_pro_goods p:last-of-type span:last-of-type{
+    color: #333;
+    text-decoration: line-through;
+}
+.mt_pro_goods button{
+    border-radius: 3px;
+    font-size: 14px;
+    background: #006699;
+    color: #fff;
+    padding: 5px;
+}
+.mt_pro_goods button:active{
+    background: red;
+}

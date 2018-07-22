@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>后台管理系统</title>
+    <link rel="stylesheet" href="res/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="res/nprogress/nprogress.css"/>
+    <link rel="stylesheet" href="css/admin.css"/>
+</head>
+<body>
+
+<div class="adm_left">
+    <div class="left_title"><a href="index.html">美淘</a></div>
+    <div class="left_user">
+        <img src="images/default.png" alt="">
+        <span>超级管理员</span>
+    </div>
+    <ul>
+        <li>
+            <a href="javascript:;">
+                <span class="glyphicon glyphicon-user"></span>
+                用户管理
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;" class="left_cate">
+                <span class="glyphicon glyphicon-list"></span>
+                分类管理
+            </a>
+            <div class="child" style="display: none">
+                <a href="categoryFirst.html">一级分类</a>
+                <a href="categorySecond.html">二级分类</a>
+            </div>
+        </li>
+    </ul>
+</div>
+<section class="adm_right adm_menu">
+    <div class="right_title">
+        <span class="glyphicon glyphicon-align-justify"></span>
+        <span class="glyphicon glyphicon-log-out" data-toggle="modal" data-target="#logModal"></span>
+    </div>
+    <div class="content">
+        <ol class="breadcrumb">
+            <li><a href="#">管理系统</a></li>
+            <li class="active">首页</li>
+        </ol>
+    </div>
+    <div class="pic_content">
+        <div id="chart1"></div>
+        <div id="chart2"></div>
+    </div>
+
+</section>
+<div class="checkLog">
+    <div></div>
+</div>
+
+
+
+
+
+
+
+<script src="res/jquery/jquery.min.js"></script>
+<script src="res/bootstrap/js/bootstrap.min.js"></script>
+<script src="res/echarts/echarts.min.js"></script>
+<script src="res/nprogress/nprogress.js"></script>
+<script src="res/artTemplate/template-native.js"></script>
+<script src="js/admin.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>

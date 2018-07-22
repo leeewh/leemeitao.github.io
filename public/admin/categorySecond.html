@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>后台管理系统-二级分类</title>
+    <link rel="stylesheet" href="res/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="res/bootstrap-validator/css/bootstrapValidator.css">
+    <link rel="stylesheet" href="res/nprogress/nprogress.css"/>
+    <link rel="stylesheet" href="css/admin.css"/>
+</head>
+<body>
+
+<div class="adm_left">
+    <div class="left_title"><a href="index.html">美淘</a></div>
+    <div class="left_user">
+        <img src="images/default.png" alt="">
+        <span>超级管理员</span>
+    </div>
+    <ul>
+        <li>
+            <a href="javascript:;">
+                <span class="glyphicon glyphicon-user"></span>
+                用户管理
+            </a>
+        </li>
+        <li class="left_cateList">
+            <a href="javascript:;" class="left_cate now">
+                <span class="glyphicon glyphicon-list"></span>
+                分类管理
+            </a>
+            <div class="child" style="display: block">
+                <a href="categoryFirst.html">一级分类</a>
+                <a href="categorySecond.html"  class="now">二级分类</a>
+            </div>
+        </li>
+    </ul>
+</div>
+<section class="adm_right adm_menu">
+    <div class="right_title">
+        <span class="glyphicon glyphicon-align-justify"></span>
+        <span class="glyphicon glyphicon-log-out" data-toggle="modal" data-target="#logModal"></span>
+    </div>
+    <div class="content">
+        <ol class="breadcrumb">
+            <li><a href="#">管理系统</a></li>
+            <li class="active">分类管理</li>
+            <li class="active">二级分类</li>
+        </ol>
+    </div>
+    <button class="btn btn-default addBtn1" data-toggle="modal" data-target="#addModal2">添加分类</button>
+    <div class="cate2_table">
+
+    </div>
+</section>
+<nav class="text-right">
+    <ul class="pagination">
+        <!--TODO-->
+    </ul>
+</nav>
+<div class="checkLog">
+    <div></div>
+</div>
+<div class="modal fade" id="addModal2" tabindex="-1">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"></button>
+                <h4 class="modal-title" id="myModalLabel">添加分类</h4>
+            </div>
+            <div class="modal-body">
+                <form action="#" id="form">
+                    <div class="form-group">
+                        <div>
+                            <label>一级分类:</label>
+                            <!--下拉菜单-->
+                            <div class="dropdown btn-group">
+                                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                                    <span class="categoryName">请选择</span>
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <!--TODO-->
+                                </ul>
+                            </div>
+                        </div>
+                        <!--序列化表单 获取表单元素的值-->
+                        <input type="hidden" name="categoryId">
+                    </div>
+                    <div class="form-group">
+                        <input name="brandName" type="text" class="form-control" placeholder="请输入二级分类名称">
+                    </div>
+                    <div class="form-group"  style="position: relative">
+                        <button class="btn btn-default">上传图片</button>
+                        <input type="file" name="pic1">
+                        <input type="hidden" name="brandLogo">
+                    </div>
+                    <div class="form-group">
+                        <input name="hot" type="hidden" class="form-control" value="1">
+                    </div>
+                    <img id="uploadImage" src="images/none.png"  width="100" height="100" alt="">
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                <button type="submit" form="form" class="btn btn-primary addSub2">确定添加</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/template" id="cate2">
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+            <th>序号</th>
+            <th>一级分类名称</th>
+            <th>二级分类名称</th>
+            <th>二级分类logo</th>
+
+        </tr>
+        </thead>
+        <tbody>
+        <% for(var i =0; i < rows.length; i ++){%>
+        <tr>
+            <th scope="row"><%=(page-1)*size+i+1%></th>
+            <td><%=rows[i].categoryName%></td>
+            <td><%=rows[i].brandName%></td>
+            <td><img src="<%=rows[i].brandLogo%>" alt=""></td>
+        </tr>
+        <%}%>
+
+        </tbody>
+    </table>
+</script>
+<script type="text/template" id="dropDown">
+    <% var $ = getJquery(); %>
+    <% $.each(rows,function(i,item){%>
+    <li><a data-id="<%=item.id%>" href="javascript:;"><%=item.categoryName%></a></li>
+    <% }); %>
+</script>
+<script src="res/jquery/jquery.min.js"></script>
+<script src="res/bootstrap/js/bootstrap.min.js"></script>
+<script src="res/bootstrap-paginator/bootstrap-paginator.min.js"></script>
+<script src="res/bootstrap-validator/js/bootstrapValidator.min.js"></script>
+<script src="res/nprogress/nprogress.js"></script>
+<script src="res/artTemplate/template-native.js"></script>
+<script src="res/jquery-fileupload/jquery.ui.widget.js"></script>
+<script src="res/jquery-fileupload/jquery.fileupload.js"></script>
+<script src="js/admin.js"></script>
+<script src="js/cate2.js"></script>
+</body>
+</html>

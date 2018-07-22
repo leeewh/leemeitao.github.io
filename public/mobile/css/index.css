@@ -1,0 +1,114 @@
+
+
+/*导航栏*/
+.mt_nav{
+    width: 100%;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+.mt_nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.mt_nav ul li{
+    float: left;
+    width: 33.33%;
+}
+.mt_nav ul li a{
+    display: block;
+    width: 100%;
+}
+.mt_nav ul li a img{
+    display: block;
+    width: 100%;
+}
+
+
+/*活动栏*/
+.mt_active{
+    padding: 15px;
+    width: 100%;
+}
+.mt_active a:nth-child(1){
+    width: 66.6%;
+    float: left;
+}
+.mt_active a:nth-child(2){
+    width: 32.9%;
+    float: right;
+}
+.mt_active a:nth-child(3){
+    width: 66.6%;
+    float: left;
+}
+.mt_active a img{
+    width: 50%;
+    float: left;
+}
+.mt_active a:nth-child(2) img{
+    width: 100%;
+}
+
+/*品牌专区*/
+
+.mt_brand{
+    width: 100%;
+}
+.mt_brand>img{
+    display: block;
+    width: 100%;
+}
+.mt_brand>a{
+    width: 25%;
+    display: block;
+    float: left;
+}
+.mt_brand>a>img{
+    display: block;
+    width: 100%;
+}
+/*商品专区*/
+.mt_pro{
+    width: 100%;
+    padding-top: 15px;
+}
+.mt_pro .mt_pro_con{
+    width: 100%;
+    padding: 0 10px;
+}
+.mt_pro .mt_pro_goods{
+    padding: 5px 5px;
+    text-align: center;
+    float: left;
+    width: 50%;
+}
+.mt_pro .mt_pro_goods>img{
+    display: block;
+    width: 100%;
+}
+.mt_pro .mt_pro_goods p:first-of-type{
+    font-size: 14px;
+}
+.mt_pro .mt_pro_goods p:last-of-type span:first-of-type{
+    color: red;
+    margin-right: 5px;
+}
+.mt_pro .mt_pro_goods p:last-of-type span:last-of-type{
+    color: #333;
+    text-decoration: line-through;
+}
+.mt_pro .mt_pro_goods button{
+    border-radius: 3px;
+    font-size: 14px;
+    background: #006699;
+    color: #fff;
+    padding: 5px;
+}
+.mt_pro >img{
+    display: block;
+    width: 100%;
+}
+.mt_pro .mt_pro_goods>img:nth-last-of-type(2){
+    margin: 10px 0;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0"/>
+    <title>登录</title>
+    <link type="image/x-icon" rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../res/mui/css/mui.css"/>
+    <link rel="stylesheet" href="../res/fa/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="../css/common.css"/>
+    <link rel="stylesheet" href="../css/user.css"/>
+</head>
+<body>
+<div class="mt_container">
+    <header class="mt_topBar">
+        <a href="javascript:history.back();" class="mt_topBar_back"><span class="fa fa-arrow-left"></span></a>
+        <h1>登录</h1>
+        <!--<a href="search.index" class="mt_topBar_search"><span class="fa fa-search"></span></a>-->
+    </header>
+    <div class="mt_content">
+        <form class="form_box">
+            <div class="mui-input-row">
+                <input name="username" type="text" placeholder="用户名">
+            </div>
+            <div class="mui-input-row">
+                <input name="password" type="password" placeholder="密码" class="mui-input-password" data-input-password="2">
+                <span class="mui-icon mui-icon-eye"></span>
+            </div>
+            <a href="javascript:;" class="mui-btn mui-btn-primary btn_login">登录</a>
+            <div class="mui-input-row mt_text">
+                <a href="register.html">免费注册</a>
+            </div>
+        </form>
+    </div>
+    <footer class="mt_footBar">
+        <ul>
+            <li><a href="../index.html"><span class="fa fa-home"></span><p>首页</p></a></li>
+            <li><a href="../category.html"><span class="fa fa-bars"></span><p>分类</p></a></li>
+            <li><a href="javascript:;"><span class="fa fa-shopping-cart"></span><p>购物车</p></a></li>
+            <li><a href="index.html"><span class="fa fa-user"></span><p>会员中心</p></a></li>
+        </ul>
+    </footer>
+</div>
+<script src="../res/mui/js/mui.js"></script>
+<script src="../res/zepto/zepto.min.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/user/login.js"></script>
+</body>
+</html>

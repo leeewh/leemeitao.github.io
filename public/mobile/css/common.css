@@ -1,0 +1,154 @@
+body{
+    font-family: "Microsoft YaHei";
+    height: 100%;
+
+    /*touch-action: none;*/
+}
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+li{
+    list-style: none;
+}
+
+
+.mt_container{
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: #fff;
+}
+/*顶部通栏*/
+.mt_topBar{
+    width: 100%;
+    height: 45px;
+    background: #006699;
+    color: #fff;
+    position: absolute;
+}
+.mt_topBar h1{
+    font-size: 18px;
+    font-weight: normal;
+    width: 80px;
+    margin: 0 auto;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+}
+.mt_topBar a{
+    color: #fff;
+    display: block;
+    height: 45px;
+    width: 45px;
+    font-size: 20px;
+    position: absolute;
+    line-height: 45px;
+    text-align: center;
+}
+.mt_topBar .mt_topBar_back{
+    left: 0;
+    top: 0;
+
+}
+.mt_topBar .mt_topBar_search{
+    right: 0;
+    top: 0;
+
+}
+
+/*底部通栏*/
+.mt_footBar{
+    width: 100%;
+    height: 55px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background: #006699;
+}
+.mt_footBar ul{
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.mt_footBar ul li{
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+.mt_footBar ul li a{
+    display: block;
+    height: 55px;
+    color: #fff;
+}
+.mt_footBar ul li a span{
+    font-size: 20px;
+    padding-top: 10px;
+}
+.mt_footBar ul li a p{
+    color: #fff;
+}
+.mt_footBar ul li.now a p,
+.mt_footBar ul li.now a span{
+    color: orange;
+}
+
+/*中心内容*/
+.mt_content{
+    width: 100%;
+    height: 100%;
+    padding-top: 45px;
+    padding-bottom: 55px;
+}
+.mt_content .mui-scroll-wrapper{
+    position: relative;
+    height: 100%;
+    touch-action: none;
+
+}
+.mt_content .mui-scroll{
+    position: absolute;
+    min-height: 100%;
+    width: 100%;
+}
+
+/*加载效果*/
+.mt_loading{
+    min-height: 250px;
+    width: 100%;
+    text-align: center;
+    line-height: 250px;
+    z-index: 111999;
+
+}
+.mt_loading .mui-icon{
+    color: #069;
+    animation: rotateLoading 1s infinite;
+    z-index: 111999;
+}
+@keyframes rotateLoading {
+    from{
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+    }
+}
+/*webkit兼容*/
+@-webkit-keyframes rotateLoading {
+    from{
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+    }
+}
